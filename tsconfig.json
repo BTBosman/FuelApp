@@ -21,6 +21,10 @@
     "src/**/*.spec.ts",
     "src/**/__tests__/*.ts"
   ],
+  "files": [
+    "types/MicrosoftMaps/CustomMapStyles.d.ts",
+    "types/MicrosoftMaps/Modules/Autosuggest.d.ts"
+  ],
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false

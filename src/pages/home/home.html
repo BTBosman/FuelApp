@@ -1,14 +1,21 @@
 <ion-header>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Ak4pAmbEtVFkBIRgzBTPVJiqS36d4VVhPXIvstTPNU4I_GiSLKRwoYbjb7tbEZnP'></script>
+
+    <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/mylib.js"></script>
+    <script src="js/app.js"></script>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Geo Demo
     </ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+      </ion-buttons> 
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <div id='myMap'></div>
 </ion-content>
